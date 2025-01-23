@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de HTML5</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h1>Coral Azul Olon Beach</h1>
+	<div class="contenedor">
+		<header>
+			
+			<nav>
+				<ul>
+					<li><a href="#inicio">Sobre Nosotros</a></li>
+					<li><a href="#seccion1">Menú</a></li>
+					<li><a href="#seccion2">Más Información</a></li>
+					<li><a href="#acerca-de">Contáctanos y Reservas</a></li>
+		</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="inicio">
+				<h2>Sobre Nosotros</h2>
+				<p>Somos un restaurante cuyo objetivo es brindarle a nuestros clientes las mejores experiencias y comodidad durante su 
+					estadía. Recuerdos inborrables, recuerdos para siempre presente.
+				</p>
+				<div class="image-container">
+					<img src="../imagenes/restaurante1.jpg" alt="Image 1" height="200" width="200">
+					<img src="../imagenes/bar.jpg" alt="Image 2" height="200" width="200">
+					<img src="../imagenes/restaurante2.jpg" alt="Image 3" height="200" width="200">
+				</div>
+				
+
+			</section>
+			
+
+			<section id="seccion1">
+				<h2>Menú</h2>
+				<p>Nuestros mejores platos: </p>
+				<table>
+					<thead>
+						<tr>
+							<th>Top 1</th>
+							<th>Top 2</th>
+							<th>Top 3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Ceviche de Camarón</td>
+							<td>Arroz con Cangrejo</td>
+							<td>Pescado al Ajillo</td>
+						</tr>
+						<tr>
+							<td>$5</td>
+							<td>$8</td>
+							<td>$8.5</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="seccion2">
+				<h2>Más Información</h2>
+				<p>Ingresa tus datos para poder hacer comentarios o reservas, nos comunicaremos contigo:</p>
+				<form action="procesar.php" method="post">
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" name="nombre" required>
+
+					<label for="email">Correo electrónico:</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="mensaje">Mensaje:</label>
+					<textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
+
+					<button type="submit">Enviar</button>
+				</form>
+			</section>
+
+			<section id="acerca-de">
+				<h2>Nuestros empleados</h2>
+				<p>Para que nos conozcas un poco más, somos un negocio familiar</p>
+				<ul>
+					<li>CEO: Andrea Del Pino</li>
+					<li>Área Legal: Guillermo Del Pino</li>
+					<li>Marketing: Juan Fernando Del Pino</li>
+					<li>Costos: Natalia Mosquera</li>
+					<li>Auditoría: Juan Guillermo Del Pino</li>
+				</ul>
+			</section>
+		</main>
+	</div>
+    <footer>
+        <p>&copy; 2024 Mi sitio web</p>
+    </footer>
+</body>
+</html>
